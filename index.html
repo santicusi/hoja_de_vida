@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIO Y CV</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script>
+        window.onscroll = function() { showScrollButton() };
+
+        function showScrollButton() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("scrollToTopBtn").style.display = "block";
+        } else {
+            document.getElementById("scrollToTopBtn").style.display = "none";
+        }
+        }
+
+        function scrollToTop() {
+        document.body.scrollTop = 0; // Para navegadores Safari
+        document.documentElement.scrollTop = 0; // Para navegadores Chrome, Firefox, IE y Opera
+        }
+
+        
+        window.addEventListener('DOMContentLoaded', (event) => {
+            const tabs = document.querySelectorAll('.tab');
+            const tabContents = document.querySelectorAll('.tab-content');
+
+            tabs.forEach((tab) => {
+                tab.addEventListener('click', () => {
+                    const target = tab.dataset.target;
+
+                    tabs.forEach((t) => {
+                        t.classList.remove('active');
+                    });
+
+                    tab.classList.add('active');
+
+                    tabContents.forEach((content) => {
+                        content.classList.remove('active');
+                        if (content.id === target) {
+                            content.classList.add('active');
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a class="tab active" data-target="tab1" href="#tab1">BIBLIOGRAFIA</a></li>
+                <li><a class="tab" data-target="tab2" href="index.html#tab2">METAS</a></li>
+                <li><a class="tab" data-target="tab3" href="#tab3">VIDA PERSONAL</a></li>
+                <li><a class="tab" data-target="tab4" href= "#tab4" >PROYECTOS</a></li>
+                <li><a class="tab" data-target="tab5" href="#tab5">MAPA</a></li>
+            </ul>
+        </nav> <br> <br>
+        <div class="contenedor-sobre-nosotros"> 
+            <img src="imagen/s1.jpeg" alt="" class="imagen-about-us1">
+        <div class="contenido-textos">
+        <!-- Resto del contenido del encabezado -->
+        <selection class="textos-header">
+            <h1>SANTIAGO CUSI</h1>
+            <h1>ROMERO</h1>
+            <h2>Estudiante de Univalle</h2>
+            <h2>Ingeniería Topográfica</h2>
+            <h2>17 de Agosto del 2001</h2>
+            <h2>Cali, Valle del Cauca</h2>
+        </selection>
+        <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,50.10 C182.47,152.83 349.20,-50.10 500.00,50.10 L500.00,150.33 L0.00,150.33 Z" style="stroke: none; fill: rgb(255, 255, 255);"></path></svg></div>
+    </header>
+    <main>
+        <section id="tab1" class="tab-content active">
+            <!-- Contenido de la pestaña Inicio -->
+            <section class="contenedor sobre-nosotros">
+                <h2 class="titulo"> ¿QUIEN ES SANTIAGO CUSI?</h2>
+                <div class="contenedor-sobre-nosotros"> 
+                    <img src="imagen/s3.jpg" alt="" class="imagen-about-us">
+                    <div class="contenido-textos">
+                        <h3><span>1</span>IDENTIDAD PERSONAL</h3>
+                        <p> Santiago Cusi, es un joven de 22 años, nacido en Cali, Valle, pero criado desde los 2 años en Candelaria, Valle. Desde temprana edad, mi vida estuvo marcada por el entorno natural y la diversidad geográfica del Valle del Cauca. Mi identidad está arraigada en la tierra que me crió y en la búsqueda constante de conocimiento y excelencia.</p>
+                        <h3><span>2</span>ENFOQUE EN LA CARRERA</h3>
+                        <p>Crecer en Candelaria me permitió estar inmerso en un entorno rural, rodeado de majestuosas montañas, ríos sinuosos y vastos campos. Esta experiencia temprana despertó mi curiosidad por la topografía y la cartografía, ya que siempre estuve fascinado por la forma en que la geografía moldea nuestro mundo y cómo las tecnologías geoespaciales pueden revelar su belleza y complejidad.</p>
+                        <h3><span>3</span>OBJETIVOS PROFESIONALES</h3>
+                        <p>Mi origen en esta región ha nutrido mi conexión con la tierra y mi determinación para aplicar mis habilidades para preservar y mejorar nuestro entorno natural y la calidad de vida de las comunidades locales. A través de mi viaje académico y profesional, mi objetivo es seguir explorando las posibilidades de esta carrera y contribuir al desarrollo sostenible de nuestra región y más allá. Mi pasión por la geomatica se fusiona con mi compromiso de servir a la sociedad y trabajar en proyectos que tengan un impacto positivo y duradero en nuestro mundo cambiante.</p>
+                    </div>
+            </div> 
+            </section>
+        </section>
+
+        <section id="tab2" class="tab-content">
+            <!-- Contenido de la pestaña Acerca de -->
+
+            <section class="clientes contenedor">
+                <h2 class="titulo"> OBJETIVOS PERSONALES </h2>
+                <div class="cards1">
+                    <div class="card1">
+                        <img src="imagen/s4.jpg" alt="">
+                        <div class="contenido-texto-card1">
+                            <h4>Dominar la Ingeniería Topográfica</h4>
+                            <p>Mi principal objetivo es adquirir un profundo conocimiento en todos los aspectos de mi carrera para poder desempeñarme de manera excepcional en mi vida profesional. Esto incluye la aplicación de las últimas tecnologías y herramientas geoespaciales, así como la comprensión completa de los principios topográficos y cartográficos que respaldan mi campo de estudio. Mi dedicación a la excelencia en esta disciplina es el motor que impulsa mi crecimiento personal y profesional.</p>
+                        </div>
+                    </div>
+                    <div class="card1">
+                        <img src="imagen/s5.jpg" alt="">
+                        <div class="contenido-texto-card1">
+                            <h4>Excelencia Académica</h4>
+                            <p>Mi compromiso con la excelencia académica se refleja en mi objetivo de aprobar todas las materias con calificaciones sobresalientes. Creo que el conocimiento sólido y las habilidades bien desarrolladas son la base de una carrera exitosa. Por lo tanto, me esfuerzo por mantener un alto rendimiento académico como una muestra de mi dedicación y compromiso con mi campo de estudio. </p>
+                        </div>
+                    </div>
+                    <div class="card1">
+                        <img src="imagen/s6.jpg" alt="">
+                        <div class="contenido-texto-card1">
+                            <h4>Desarrollo de Proyecto de Grado</h4>
+                            <p>El desarrollo de mi proyecto de grado es un paso crucial en mi trayectoria académica. Mi objetivo es llevar a cabo una investigación sólida y significativa que aporte valor al campo de la Ingeniería Topográfica y, al mismo tiempo, me permita aplicar mis conocimientos en un proyecto práctico y relevante. Este proyecto no solo representa un requisito académico, sino también una oportunidad para contribuir al avance de la disciplina.</p>
+                        </div>
+                    </div>
+                </div>
+                <br><br>
+                <div class="cards1">
+                    <div class="card1">
+                        <img src="imagen/s7.jpg" alt="">
+                        <div class="contenido-texto-card1">
+                            <h4>Especialización en Sistemas de Información Geográfica (SIG)</h4>
+                            <p>Reconociendo la creciente importancia de los SIG en el mundo actual, mi objetivo es enfocarme en esta área específica de la Ingeniería Topográfica. Deseo adquirir un profundo conocimiento de los SIG, desde la recopilación de datos geoespaciales hasta su análisis y visualización. Creo que esta especialización me permitirá abordar desafíos complejos y encontrar soluciones innovadoras en mi futura carrera.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card1">
+                        <img src="imagen/s8.jpg" alt="">
+                        <div class="contenido-texto-card1">
+                            <h4>Educación Continua: Maestría en Análisis de Datos SIG</h4>
+                            <p>Como parte de mi búsqueda constante de crecimiento y mejora, tengo la intención de continuar mi educación a nivel de posgrado o maestría en el campo del análisis de datos SIG. Esta decisión se basa en mi deseo de convertirme en un experto en la gestión y el análisis de datos geoespaciales, lo que me permitirá abordar problemas más complejos y liderar proyectos en mi campo.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="clientes contenedor">
+                <h2 class="titulo"> VISIÓN A 10 AÑOS </h2>
+                <div class="cards1">
+                    <div class="card1">
+                        <img src="imagen/s9.jpg" alt="">
+                        <div class="contenido-texto-card1">
+                            <h4>Experto en SIG</h4>
+                            <p>Habré consolidado mi experiencia como experto en SIG, habiendo trabajado en una variedad de proyectos complejos que abordan problemas geoespaciales a nivel local y global. Mi profundo conocimiento en la recopilación, procesamiento, análisis y visualización de datos geoespaciales me habrá convertido en un recurso valioso en la industria.</p>
+                        </div>
+                    </div>
+                    <div class="card1">
+                        <img src="imagen/s10.jpg" alt="">
+                        <div class="contenido-texto-card1">
+                            <h4>Maestría en Análisis de Datos SIG</h4>
+                            <p>Habré completado mi maestría en análisis de datos SIG, lo que me permitirá realizar investigaciones avanzadas y aplicar técnicas de análisis de datos geoespaciales de vanguardia en mis proyectos y consultorías.</p>
+                        </div>
+                    </div>
+                    <div class="card1">
+                        <img src="imagen/s11.jpg" alt="">
+                        <div class="contenido-texto-card1">
+                            <h4>Fundador de una Empresa de SIG</h4>
+                            <p>Habré fundado mi propia empresa especializada en SIG, con un enfoque en brindar soluciones geoespaciales innovadoras para una variedad de sectores, como urbanismo, medio ambiente, agricultura y más. Mi empresa se habrá destacado por su calidad, precisión y capacidad para abordar desafíos complejos.</p>
+                        </div>
+                    </div>
+                </div>
+                <br><br>
+                <div class="cards1">
+                    <div class="card1">
+                        <img src="imagen/s12.jpg" alt="">
+                        <div class="contenido-texto-card1">
+                            <h4>Líder en Innovación</h4>
+                            <p>Mi empresa se habrá ganado una reputación por liderar la innovación en SIG. Estaré a la vanguardia de la adopción de nuevas tecnologías y enfoques en la industria, lo que nos permitirá ofrecer soluciones de vanguardia a nuestros clientes.</p>
+                        </div>
+                    </div>
+                    <div class="card1">
+                        <img src="imagen/s13.jpg" alt="">
+                        <div class="contenido-texto-card1">
+                            <h4>Contribución a la Comunidad</h4>
+                            <p>Mi visión incluye una sólida contribución a la comunidad y la sociedad en general. A través de proyectos de responsabilidad social empresarial, colaboraciones con organizaciones sin fines de lucro y la participación activa en iniciativas relacionadas con el uso de SIG para la toma de decisiones sostenibles, estaré contribuyendo positivamente al bienestar de la sociedad. </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section id="tab3" class="tab-content">
+            <!-- Contenido de experience builder -->
+            <iframe src="https://experience.arcgis.com/experience/1221d6faa7eb4bb9ac88333128636c79/" width="100%" height="800" frameborder="0"></iframe>
+        </section>
+
+        <section id="tab4" class="tab-content">
+            <!-- Contenido de experience builder-->
+            <iframe src="https://experience.arcgis.com/experience/e9c6d93d5ac7477a922b32a4a30fcf3e/" width="100%" height="800" frameborder="0"></iframe>
+        </section>
+
+        <section id="tab5" class="tab-content">
+            <!-- Contenido de experience builder-->
+            <iframe src="https://experience.arcgis.com/experience/91f13e51224144869e3363bd4e0dbd35/" width="100%" height="800" frameborder="0"></iframe>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Contenido del pie de página -->
+        <div class="contenedor-footer">
+            <div class="content-foo">
+                <h4>Telefono</h4>
+                <p> 3225978297 </p>
+            </div>
+            <div class="content-foo">
+                <h4>Correo</h4>
+                <p> santiagocusi@hotmail.com </p>
+                <p>santiago.cusi@correounivalle.edu.co</p>
+            </div>
+            <div class="content-foo">
+                <h4>Instagram</h4>
+                <p> santiagocusi </p>
+            </div>
+        </div>
+        <div class="contenedor-footer2">
+            <div class="content-foo">
+                <h4>linkeln</h4>
+                <p> Santiago Cusi Romero </p>
+            </div>
+            <div class="content-foo">
+                <h4>Github</h4>
+                <p> santicusi </p>
+            </div>
+            <div class="content-foo">
+                <h4>Facebook</h4>
+                <p> Santiago Cusi </p>
+            </div>
+        </div>
+        <h2 class="titulo-final">&copy; CUSIG | Santiago Cusi Romero </h2>
+    </footer>
+<button id="scrollToTopBtn" onclick="scrollToTop()">&#8679; Subir</button>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
